@@ -23,7 +23,9 @@ request({
     leadRecord: {
       Email: 'titus@operus.net',
       FirstName: 'Titus',
-      LastName: 'Operus'
+      LastName: 'Operus',
+      MktowURL: 'https://452-ZON-215.mktoapi.com/soap/mktows/2_3'+'?WSDL',
+      LeadNotes: 'favorite ice cream: vanilla'
     }
   }}, function (err, response, body) {
     if(err){
