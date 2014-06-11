@@ -135,8 +135,7 @@ function leadNotes(leadAttributes){
 function optIn(leadAttributes){
     if(leadAttributes.OptIn){
         return '<attribute>' +
-            '<attrName>optIn</attrName><attrValue>' + leadAttributes.OptIn + '</attrValue>' +
+            '<attrName>OptIn</attrName><attrValue>' + leadAttributes.OptIn + '</attrValue>' +
             '</attribute>' }
     else {return '';}
-    }
 }
