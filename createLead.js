@@ -17,7 +17,7 @@ module.exports = function(leadAttributes) {
     city(leadAttributes) + state(leadAttributes) +
     postCode(leadAttributes) + country(leadAttributes)+
     bestTime(leadAttributes) + leadNotes(leadAttributes) +
-    optIn(leadAttributes) + 
+    optIn(leadAttributes) + sourceForm(leadAttributes) + 
     '</leadAttributeList>' +
     '</leadRecord>' +
     '<returnLead>true</returnLead>' +
@@ -136,6 +136,14 @@ function optIn(leadAttributes){
     if(leadAttributes.OptIn){
         return '<attribute>' +
             '<attrName>OptIn</attrName><attrValue>' + leadAttributes.OptIn + '</attrValue>' +
+            '</attribute>' }
+    else {return '';}
+};
+
+function sourceForm(leadAttributes){
+    if(leadAttributes.SourceForm){
+        return '<attribute>' +
+            '<attrName>sourceForm</attrName><attrValue>' + leadAttributes.SourceForm + '</attrValue>' +
             '</attribute>' }
     else {return '';}
 }
